@@ -11,19 +11,14 @@
         <input type="text" name="first-name" maxlength="7" placeholder="Imię">
         <label for="email">E-mail</label>
         <input type="email" name="email" id="email">
-        <input type="number" name="quantity">
-        <input type="checkbox" id="agreement" required><label for="agreement">Zgoda na dane</label>
-        <label>
-        <input type="radio" name="gender">Mężczyzna</label><br>
-        <label><input type="radio" name="gender">Kobieta</label><br>
+        <label for="phone">Enter your phone number:</label>
+
+        <input type="tel" id="phone" name="phone"
+               pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+               required>
+        
+        <span class="note">Format: 123-456-7890</span>
         <textarea name="" id="" cols="30" rows="10"></textarea>
-    
-    
-        <select name="city">
-            <option value="krk">Kraków</option>
-            <option value="waw" selected>Warszawa</option>
-            <option value="gda">Gdańsk</option>
-        </select>
         <input type="submit">
     
     </form>

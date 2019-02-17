@@ -1,0 +1,105 @@
+* {
+    color:red;
+}
+
+div.connected p {
+    color: green;
+}
+
+div.connected p::before {
+    content: '123456';
+    color: yellow;
+}
+
+div.connected p::after  {
+    content: '7890';
+    color: yellow;
+}
+
+.hover a {
+    color: green;
+    text-decoration: none;
+}
+
+.hover a:hover {
+    color: red;
+}
+
+form input:focus {
+    border: 2px solid brown;
+    outline: 0;
+}
+
+ul li:first-child {
+    color: violet;
+}
+ul li:last-child {
+    color:aqua;
+}
+
+ul li:nth-of-type(3) {
+    color: orange;
+}
+
+ul li:nth-of-type(even) {
+    color: orange;
+}
+
+ul li:nth-of-type(3n + 2) {
+    color: orange;
+}
+
+input[title] {
+    border: 2px solid violet;
+}
+
+input[title="piaty"] {
+    border: 2px solid aqua;
+}
+
+/* sprawdza czy wystepuje string */
+
+input[title~="input"] {
+border: 2px solid orange;
+}
+
+input[title*="pi"] {
+    border: 2px solid orange;
+    }
+
+input[title^="pierw"] {
+    border: 2px solid grey;
+}
+
+input[title$="ni"] {
+    border: 2px solid violet;
+}
+
+.relative {
+    position: relative;
+}
+
+.orange,
+.grey {
+    height: 300px;
+}
+
+.orange {
+    background-color: orange;
+    position: absolute;
+    top: 100px;
+    left: 60px;
+}
+
+.grey {
+    background-color: grey;
+}
+
+#main-nav {
+    position: sticky;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+}
